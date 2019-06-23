@@ -4,10 +4,7 @@ const chai = require('chai');
 
 describe('buildSynonymsList', () => {
   it('will build the list', () => {
-    const hrstart = process.hrtime();
     const synonymsList = buildSynonymsList(data.synonymPairsExtended);
-    const hrend = process.hrtime(hrstart);
-    console.info('Execution time (hr): %ds %dms', hrend[0], hrend[1] / 1000000);
     
     const expectedSynonymsList = {
       Jon: ['Jon', 'John', 'Jonny', 'Jonathan', 'Jonathon'],
