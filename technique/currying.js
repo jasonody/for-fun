@@ -12,5 +12,3 @@ const objs = [obj1, obj2]
 const aMap = map(aReader)
 const onlyA = aMap(objs)
 const onlyB = map(bReader)(objs)
-
-const zip = 
